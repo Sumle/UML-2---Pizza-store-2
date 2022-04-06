@@ -6,4 +6,8 @@
     <RootNamespace>UML_2___Pizza_Store_2</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Order.cs" />
+  </ItemGroup>
+
 </Project>
