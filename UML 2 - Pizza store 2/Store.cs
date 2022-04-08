@@ -141,7 +141,7 @@ namespace UML_2___Pizza_Store_2
             return inpNumber;
         }
 
-        public static int NumberInputUser(int countList)
+        public static int NumberInput(int countList)
         {
             bool valid = false;
             int inpNumber = 0;
@@ -175,7 +175,7 @@ namespace UML_2___Pizza_Store_2
                 Console.WriteLine($"{number}, {pizza}");
                 number++;
             }
-            Pizza retrunPizzas = pizzas[NumberInputUser(pizzas.Count) - 1];
+            Pizza retrunPizzas = pizzas[NumberInput(pizzas.Count) - 1];
             return retrunPizzas;
         }
 
@@ -196,7 +196,7 @@ namespace UML_2___Pizza_Store_2
                 Console.WriteLine($"{number}. {item}");
                 number++;
             }
-            int input = NumberInputUser(listMenu.Count);
+            int input = NumberInput(listMenu.Count);
             return input;
         }
 
@@ -208,7 +208,7 @@ namespace UML_2___Pizza_Store_2
                 Console.WriteLine($"{number}. {str}");
                 number++;
             }
-            int numberToReturn = NumberInputUser(list.Count);
+            int numberToReturn = NumberInput(list.Count);
             return numberToReturn;
         }
 

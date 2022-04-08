@@ -158,7 +158,7 @@ namespace UML_2___Pizza_Store_2
                 Console.ResetColor();
                 Console.WriteLine("Search for pizza by number");
                 PrintMenu();
-                int findingNumberOfPizza = Store.NumberInputUser(_pizzas.Count);
+                int findingNumberOfPizza = Store.NumberInput(_pizzas.Count);
                 Pizza findingAPizza = _pizzas.Find(x => x.NumberOfThePizza == findingNumberOfPizza);
                 Console.WriteLine(findingAPizza);
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -198,7 +198,7 @@ namespace UML_2___Pizza_Store_2
                 Console.WriteLine("What pizza did you order?");
                 Console.ResetColor();
                 PrintMenu();
-                Pizza addingPizzas = _pizzas[Store.NumberInputUser(_pizzas.Count) - 1];
+                Pizza addingPizzas = _pizzas[Store.NumberInput(_pizzas.Count) - 1];
                 order.Pizzas.Add(addingPizzas);
 
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
