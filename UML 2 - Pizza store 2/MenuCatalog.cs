@@ -34,7 +34,7 @@ namespace UML_2___Pizza_Store_2
             if (choice == 3) UpdatingPizza();
             if (choice == 4) SearchingForAPizza();
             if (choice == 5) ReadingPizza();
-            if (choice == 6) SeeThePizzaMenu();
+            if (choice == 6) SeeThePizzaMenu(); 
             else Console.WriteLine("The END");
         }
 
